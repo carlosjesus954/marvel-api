@@ -61,9 +61,24 @@ padding-left: 1rem;
 }
 
 /* Nav */
-
+.nav__close{
+    fill: var(--blanco);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem 1rem 1rem 1.1rem;
+}
 .nav{
     width: 100%;
+    left: -120%;
+    position: fixed;
+    background-color: var(--negro);
+    top: 0;
+    height: 100vh;
+    transition: all 0.5s;
+    overflow: scroll;
+}
+.activo{
+    left: 0%;
 }
 .nav__ul{
     padding-left: 1.3rem;
