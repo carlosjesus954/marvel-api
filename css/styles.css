@@ -103,13 +103,47 @@ padding-left: 1rem;
 
 .nav__socials{
     border-top:   solid .0125rem #393939;
-    padding: 1rem 1.3rem 1rem 1.3rem;
+    padding: 2rem 1.3rem 1rem 1.3rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 .svg__socials{
     fill: #727272;
     width: 1.1rem;
     height: 1.1rem;
+}
+
+/* Insider */
+
+.nav__insider{
+    background-color: var(--blanco);
+    padding: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+.nav__content{
+    
+}
+.nav__link--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.nav__promo{
+    
+}
+.nav__p2{
+    color: #202020;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+}
+.nav__p3{
+    color: #727272;
+    font-weight: bolder;
+    font-size: 0.8rem;
 }
