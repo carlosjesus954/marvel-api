@@ -236,68 +236,71 @@ body {
 .carrusel {
   background-color: #151515;
   width: 100%;
-  overflow: hidden;
-}
-.carrusel__general {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  width: 200%;
-}
-.carrusel__main {
-  width: 100%;
-  height: 42rem;
-}
-.carrusel__img {
-  height: 12.4rem;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-.carrusel__ul {
-  width: 100%;
-  height: 2rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-.carrusel__li {
-  width: 1.2rem;
-  height: 0.2rem;
-  background-color: white;
-  cursor: pointer;
-}
-.carrusel__active {
-  background-color: #e62429;
-}
-.carrusel__containertext {
-  color: var(--blanco);
-  padding: 0 2rem;
   display: flex;
   flex-flow: column nowrap;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+.carrusel__containerimg{
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+
+  transition: all .5s ease;
+}
+.carrusel__link{
+  width: 100%;
+}
+.carrusel__img{
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+  height: 12.4rem;
+}
+.carrusel__ul{
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 0;
   gap: 1rem;
-  align-items: left;
-  text-align: left;
 }
-.carrusel__logo {
-  width: 11rem;
+.carrusel__li{
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: var(--blanco);
+  cursor: pointer;
 }
-.carrusel__headline {
-  font-size: 1.3rem;
-}
-.carrusel__text {
-  font-size: 0.9rem;
-}
-.carrusel__links {
+.carrusel__li--activo{
   background-color: #e62429;
-  width: 10rem;
-  text-align: center;
+}
+.carrusel__globaltext{
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+
+  transition: all .5s ease;
+  /* transform: translateX(-50%); */
+}
+.carrusel__containertext{
+  padding: 0 2rem;
   color: var(--blanco);
-  padding: 0.8rem;
-  font-weight: bolder;
-  margin: 0.2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  height: 27rem;
+  width: 100%;
+}
+.carrusel__headline{
+  font-size: 1.4rem;
+}
+.carrusel__text{
   font-size: 0.9rem;
+}
+.carrusel__links{
+  background-color: #e62429;
+  color: var(--blanco);
+  padding: 1rem;
 }
