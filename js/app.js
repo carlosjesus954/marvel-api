@@ -17,13 +17,28 @@ header__burguer.addEventListener("click", showMenu);
 nav__close.addEventListener("click", hiddenMenu);
 
 // Carrusel events
+setTimeout(function(){
+  console.log('object');
+  carrusel__li.forEach((cadaPunto, i) =>{
+    // whil
+    let posicion = i
+    let operacion = posicion * -50
+    carrusel__containerimg.style.transform = `translateX(${operacion}%)`
+    carrusel__globaltext.style.transform = `translateX(${operacion}%)`
+
+    carrusel__li.forEach((cadaPunto , i) =>{
+      carrusel__li[i].classList.remove('carrusel__li--activo')
+     })
+     carrusel__li[i].classList.add('carrusel__li--activo')
+  })
+}, 4000)
+
 
 carrusel__li.forEach((cadaPunto , i) => {
   carrusel__li[i].addEventListener('click', ()=>{
     let posicion = i
     // guardamos la posicion y dependiendo de la posicion que estemos tendra valor en la operacion
     let operacion = posicion * -50
-    console.log(operacion);
     //cuando la posicion es 0 el transformX es 0
     carrusel__containerimg.style.transform = `translateX(${operacion}%)`
     carrusel__globaltext.style.transform = `translateX(${operacion}%)`
